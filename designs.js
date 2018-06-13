@@ -3,8 +3,8 @@ $(document).ready(function () {
     $('#sizePicker').submit(function makeGrid(grid) {
     $('table tr').remove();
     var rows = $('#inputHeight').val();
-    var columns = $('#inputWeight').val();
-    for (var i = 1; i <= rows; i++) { 
+    var columns = $('#inputWidth').val();
+    for (var i = 1; i <= rows; i++) {
         $('table').append("<tr></tr>");
         for (var j = 1; j <= columns; j++) {
             $('tr:last').append("<td></td>");
@@ -16,6 +16,5 @@ $(document).ready(function () {
         var color = $('#colorPicker').val();
         $(event.target).css('background-color', color); // Choose  color on a click event
       });
-    }); 
+    });
   });
-  
